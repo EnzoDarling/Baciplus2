@@ -1,16 +1,17 @@
-body{
-	margin: 0;
-  	padding: 0;	
-	font-family: 'Roboto', sans-serif;
-	background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 0%, rgba(255,255,255,1) 98%, rgba(224,239,249,1) 100%);
+body{	
+	margin: 0 auto;
+	background-color: #34A8F3;
+	/*background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 0%, rgba(255,255,255,1) 98%, rgba(224,239,249,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(0%, rgba(216,225,231,1)), color-stop(98%, rgba(255,255,255,1)), color-stop(100%, rgba(224,239,249,1)));
 	background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 0%, rgba(255,255,255,1) 98%, rgba(224,239,249,1) 100%);
 	background: -o-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 0%, rgba(255,255,255,1) 98%, rgba(224,239,249,1) 100%);
 	background: -ms-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 0%, rgba(255,255,255,1) 98%, rgba(224,239,249,1) 100%);
 	background: linear-gradient(to bottom, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 0%, rgba(255,255,255,1) 98%, rgba(224,239,249,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0 );	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0 );	*/
 }
-
+body, button, input, option, textarea {
+	font-family: 'Montserrat', sans-serif;
+}
 .Menu {	
 	float: left;
 	width: 100%;
@@ -19,6 +20,7 @@ body{
   	background: rgba(000, 000, 000, 0.7);
   	padding: 1em 1em;  	
   	text-align: center;
+  	margin: 0 auto;
 }
 .MenuLink{	
 	display: inline-block;
@@ -32,10 +34,74 @@ body{
 .Menu .MenuLink:hover{
 	text-shadow: 3px 3px 10px #fff;
 }
+.FormTitulo{
+	margin-bottom: 10px;
+	padding: 15px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 700px;
+}
+.Contenido{
+	padding: 20px;	
+}
+	#ContentForm{
+		background-color: #F2F2F2;	
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		max-width: 800px;
+		height: 800px;
+		padding: 20px 20px 20px 20px;
+		border-radius: 10px;
+		box-shadow: 5px 5px 5px #3B3B3B;
+	}	
+	#ContentForm label{
+		display: block;
+		margin: 20px 10px 10px;		
+	}
+	#ContentForm label>span{		
+	    margin-top: 10px;	 
+	}
+	#ContentForm input[type="text"]{
+		padding: 0px 0px 0px 5px;
+		margin-top: 2px;
+		margin-left: 10px;
+		width: 90%;
+		height: 30px;
+		line-height:15px;
+		outline: 0;	
+		border: 2px solid #727272;
+		border-radius: 5px;
+	}
+	#ContentForm input[type="text"]:focus{
+		border: 2px solid #09558F;
+	}
+	#ContentForm button{		
+		display: block;
+		float: left;
+		margin: 25px;
+		padding: 15px 20px 15px;
+		border: 2px solid #69CCFA;
+		border-radius: 5px 5px 5px;
+		background-color: #69CCFA;
+		font-size: 20px;
+		box-shadow: 4px 4px 0px #09558F;		
+		position: relative;
+		top: 0px;
+		left: 0px;
+	}
+	#ContentForm button:hover{		
+		top: 5px;
+		left: 5px;
+		box-shadow: 0px 0px 0px #09558F;				
+		transition: 0.3s ease-out;
+		cursor: pointer;
+	}
 .Footer{
 	text-align: center;
 	color: white;
 	border: #CECECE transparent 3px;
   	background: rgba(000, 000, 000, 0.7);
-  	padding: 1em 1em;
+  	padding: 1em 1em;  	
 }

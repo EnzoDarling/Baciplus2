@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/formularios.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<title>Baciplus - Cultivos</title>
 	<header class="miHeader">	
 		<nav class="Menu">
@@ -19,36 +19,56 @@
 			<a class="MenuLink"href="#">Contacto</a>		
 	</header>	
 </head>
+<body>
 <section class="Contenido">
-	<h3>Cultivos</h3>
+	<h3 class="FormTitulo">Cultivos</h3>
 	<form id="ContentForm">
 		<div class="FormItem">
-			<span>Num. Cultivo:</span><input type="text" class="input" name="num_cultivo">
+			<label>Num. Cultivo:</label>
+			<input type="text" class="input" name="num_cultivo">
 		</div>
 		<div class="FormItem">
-			<span>Fecha Primera Lectura:</span><input type="text" class="input" name="fecha_primera_lectura">
+			<label>Fecha Primera Lectura:</label>
+			<input type="text" class="input" name="fecha_primera_lectura">
 		</div>
 		<div class="FormItem">
-			<span>Primera Lectura:</span><input type="text" class="input" name="primera_lectura">
+			<label><span>Primera Lectura:</span></label>
+			<input type="text" class="input" name="primera_lectura">
 		</div>
 		<div class="FormItem">
-			<span>Fecha Segunda Lectura:</span><input type="text" class="input" name="fecha_segunda_lectura">
+			<label><span>Fecha Segunda Lectura:</span></label>
+			<input type="text" class="input" name="fecha_segunda_lectura">
 		</div>
 		<div class="FormItem">
-			<span>Segunda Lectura:</span><input type="text" class="input" name="segunda_lectura">
+			<label><span>Segunda Lectura:</span></label>
+			<input type="text" class="input" name="segunda_lectura">
 		</div>
 		<div class="FormItem">
-			<span>Solicitud de Cultivo:</span><input type="text" class="input" name="sol_cultivo">
+			<label><span>Solicitud de Cultivo:</span></label>
+			<input type="text" class="input" name="sol_cultivo">
 		</div>
 		<div class="FormItem">
-			<span>Resultado:</span><input type="text" class="input" name="resultado">
+			<label><span>Resultado:<span></label>
+			<input type="text" class="input" name="resultado">
 		</div>
 		<div class="FormItem">
-			<span>Num. Muestra:</span><input type="text" class="input" name="num_muestra">
+			<label><span>Num. Muestra:</span></label>
+			<input type="text" class="input" name="num_muestra">
+		</div>
+		<div>
+			<button type="submit" name="guardar">Guardar</button>
+		</div>
+		<div>
+			<button type="submit" name="nuevo">Nuevo</button>
+		</div>
+		<div>
+			<button type="submit" name="actualizar">Actualizar</button>
+		</div>
+		<div>
+			<button type="submit" name="eliminar">Eliminar</button>
 		</div>
 	</form>
 </section>
-<body>
 	<footer class="Footer">
 		Todos los derechos reservados 2016
 	</footer>
