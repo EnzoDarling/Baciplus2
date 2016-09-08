@@ -45,7 +45,7 @@ body, button, input, option, textarea {
 	padding: 20px;	
 }
 	#ContentForm{
-		background-color: #F2F2F2;	
+		background-color: #F2F2F2;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 25px;
@@ -56,14 +56,39 @@ body, button, input, option, textarea {
 		border-radius: 10px;
 		box-shadow: 5px 5px 5px #3B3B3B;
 	}	
-	#ContentForm label{
+	#ContentForm2{
+		background-color: #F2F2F2;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		max-width: 800px;
+		height: 900px;
+		padding: 20px 20px 20px 20px;
+		border-radius: 10px;
+		box-shadow: 5px 5px 5px #3B3B3B;
+	}
+	#ContentForm3{
+		background-color: #F2F2F2;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		max-width: 800px;
+		height: 550px;
+		padding: 20px 20px 20px 20px;
+		border-radius: 10px;
+		box-shadow: 5px 5px 5px #3B3B3B;
+	}	
+
+	.Form label{
 		display: block;
 		margin: 20px 10px 10px;		
 	}
-	#ContentForm label>span{		
+	.Form label>span{		
 	    margin-top: 10px;	 
 	}
-	#ContentForm input[type="text"]{
+	.Form input[type="text"]{
 		padding: 0px 0px 0px 5px;
 		margin-top: 2px;
 		margin-left: 10px;
@@ -74,10 +99,10 @@ body, button, input, option, textarea {
 		border: 2px solid #727272;
 		border-radius: 5px;
 	}
-	#ContentForm input[type="text"]:focus{
+	.Form input[type="text"]:focus{
 		border: 2px solid #09558F;
 	}
-	#ContentForm button{		
+	.Form button{		
 		display: block;
 		float: left;
 		margin: 25px;
@@ -91,7 +116,7 @@ body, button, input, option, textarea {
 		top: 0px;
 		left: 0px;
 	}
-	#ContentForm button:hover{		
+	.Form button:hover{		
 		top: 5px;
 		left: 5px;
 		box-shadow: 0px 0px 0px #09558F;				
