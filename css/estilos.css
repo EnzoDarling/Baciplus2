@@ -50,10 +50,30 @@ span{
 .Menu .MenuLink:hover{
 	text-shadow: 3px 3px 10px #fff;
 }
+.Contenido{
+  display: flex;
+}
+.Circular{
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background-image: url(../img/patient2.jpg)
+}
+.Contenido-texto{
+  width: 100%;
+}
 .Footer{
 	text-align: center;
 	color: white;
 	border: #CECECE transparent 3px;
   	background: rgba(000, 000, 000, 0.7);
   	padding: 1em 1em;
+}
+@media (max-width: 400px){
+  body{
+    background-color: pink;
+    color: pink;
+  }
 }
