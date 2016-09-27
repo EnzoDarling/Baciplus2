@@ -15,24 +15,37 @@ body, button, input, option, textarea {
 .Menu {	
 	float: left;
 	width: 100%;
-  	margin: 0 auto;
-  	border: #CECECE transparent 3px;
-  	background: rgba(000, 000, 000, 0.7);
-  	padding: 1em 1em;  	
+  height: 50px;
+  margin: 0 auto;
+  padding: 0px;
+	background: rgba(255, 255, 255, 1);	
+	text-align: center;
+}
+.Menu-list ul{
+  list-style-type: none; 
+  overflow: hidden;
+  margin: 0;
+  padding: 7px;
+}
+li{
+  	display: inline;
   	text-align: center;
-  	margin: 0 auto;
 }
-.MenuLink{	
+.MenuLink a{	
 	display: inline-block;
-    margin: 0 20px;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
+  	padding: 18px 7px 18px 7px;
+  	margin: 0px 7px;
+  	font-weight: 700;
+  	font-size: 14px;
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	color: rgba(000, 000, 000, 1);
+  	transition: background-color 0.2s ease;
+  	background-color: rgba(255, 255, 255, 0.1);
 }
-.Menu .MenuLink:hover{
-	text-shadow: 3px 3px 10px #fff;
+.MenuLink a:hover{
+	cursor: pointer;
+  	background-color: #2098d1;
 }
 .FormTitulo{
 	margin-bottom: 10px;
@@ -41,7 +54,7 @@ body, button, input, option, textarea {
 	font-size: 2em;
 	font-weight: 700px;
 }
-.Contenido{
+.Formulario{
 	padding: 20px;	
 }
 	#ContentForm{
