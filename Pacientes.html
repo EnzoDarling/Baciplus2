@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/estilos.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<title>Pacientes</title>
+	<title>Baciplus - Pacientes</title>
 	<header class="miHeader">
 		<nav class="Menu">
 			<ul class="Menu-list">
@@ -27,36 +27,30 @@
 </head>
 <body>
 	<section class="Formulario">
-		<h3 class="FormTitulo">Ordenes</h3>
+		<h3 class="FormTitulo">Pacientes</h3>
 		<form action="" id="ContentForm3" class="Form">
 			<div class="FormItem">
-				<label><span>DNI:</span></label>
-				<input type="text" class="input" name="num_orden">
+				<label class="Form-etiqueta">DNI:</label>
+				<input type="text" class="Form-caja" name="num_orden">
 			</div>
 			<div class="FormItem">
-				<label><span>Dirección:</span></label>
-				<input type="text" class="input" name="num_orden">
+				<label class="Form-etiqueta">Dirección:</label>
+				<input type="text" class="Form-caja" name="num_orden">
 			</div>
 			<div class="FormItem">
-				<label><span>Telefono:</span></label>
-				<input type="text" class="input" name="num_orden">
+				<label class="Form-etiqueta">Telefono:</label>
+				<input type="text" class="Form-caja" name="num_orden">
 			</div>
 			<div class="FormItem">
-				<label><span>N° Orden:</span></label>
-				<input type="text" class="input" name="num_orden">
+				<label class="Form-etiqueta">N° Orden:</label>
+				<input type="text" class="Form-caja" name="num_orden">
 			</div>
-			<div>
+			<section class="Botones">
 				<button type="submit" name="nuevo">Nuevo</button>
-			</div>
-			<div>
 				<button type="submit" name="guardar">Guardar</button>
-			</div>
-			<div>
 				<button type="submit" name="modificar">Modificar</button>
-			</div>
-			<div>
 				<button type="submit" name="eliminar">Eliminar</button>
-			</div>
+			</section>
 		</form>
 	</section>
 </body>
