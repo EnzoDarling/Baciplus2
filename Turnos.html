@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="css/reset.css" type="text/css">
-	<link rel="stylesheet" href="css/estilos.css" type="text/css">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">	
+	<link rel="stylesheet" type ="text/css" href="css/estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<title>Pacientes</title>
+	<title>Baciplus - Turnos</title>
 	<header class="miHeader">
 		<nav class="Menu">
 			<ul class="Menu-list">
@@ -16,7 +16,7 @@
 				<li class="MenuLink"><a href="Muestras.html">Muestras</a></li>
 				<li class="MenuLink"><a href="Ordenes.html">Ordenes</a></li>
 				<li class="MenuLink"><a href="Pacientes.html">Pacientes</a></li>
-				<li class="MenuLink"><a href="Turnos.html">Turnos</a></li>				
+				<li class="MenuLink"><a href="Turnos.html">Turnos</a></li>
 				<li class="MenuLink"><a href="Vacunas.html">Vacunas</a></li>
 				<li class="MenuLink"><a href="#">Fichas Médicas</a></li>
 				<li class="MenuLink"><a href="#">Contacto</a></li>
@@ -27,32 +27,36 @@
 </head>
 <body>
 	<section class="Formulario">
-		<h3 class="FormTitulo">Ordenes</h3>
-		<form action="" id="ContentForm3" class="Form">
+		<h3 class="FormTitulo">Turnos</h3>
+		<form action="" id="ContentForm" class="Form">
 			<div class="FormItem">
-				<label><span>DNI:</span></label>
-				<input type="text" class="input" name="num_orden">
+				<label>ID Turno:</label>
+				<input type="text" class="input" name="turn_idturno">
 			</div>
 			<div class="FormItem">
-				<label><span>Dirección:</span></label>
-				<input type="text" class="input" name="num_orden">
+				<label>Apellido:</label>
+				<input type="text" class="input" name="turn_apellido">
 			</div>
 			<div class="FormItem">
-				<label><span>Telefono:</span></label>
-				<input type="text" class="input" name="num_orden">
+				<label>Nombre:</label>
+				<input type="text" class="input" name="turn_nombre">
 			</div>
 			<div class="FormItem">
-				<label><span>N° Orden:</span></label>
-				<input type="text" class="input" name="num_orden">
+				<label>Fecha:</label>
+				<input type="text" class="input" name="turn_fecha">
+			</div>
+			<div class="FormItem">
+				<label>Hora:</label>
+				<input type="text" class="input" name="turn_hora">
+			</div>			
+			<div>
+				<button type="submit" name="guardar">Guardar</button>
 			</div>
 			<div>
 				<button type="submit" name="nuevo">Nuevo</button>
 			</div>
 			<div>
-				<button type="submit" name="guardar">Guardar</button>
-			</div>
-			<div>
-				<button type="submit" name="modificar">Modificar</button>
+				<button type="submit" name="actualizar">Actualizar</button>
 			</div>
 			<div>
 				<button type="submit" name="eliminar">Eliminar</button>
