@@ -120,11 +120,11 @@ li{
   background-repeat: no-repeat;
 }
 .FormTitulo{
-  /*margin: 40px;*/
+  margin: 0 auto;
   /*padding: 15px;*/
   text-align: center;
   font-size: 3em;
-  font-weight: 700px;
+  font-weight: 500px;
 }
 .Formulario{
   overflow: hidden;
