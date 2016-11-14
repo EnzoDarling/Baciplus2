@@ -27,32 +27,33 @@
 <body>
 	<section class="Formulario">
 		<h3 class="FormTitulo">Turnos</h3>
-		<form action="" class="ContentForm2">
+		<form class="ContentForm2" action="turnos.php" method="POST">
 			<div class="FormItem">
 				<label class="Form-etiqueta">ID Turno:</label>
-				<input type="text" class="Form-caja" name="turn_idturno">
+				<input type="text" class="Form-caja" name="id_turno">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Apellido:</label>
-				<input type="text" class="Form-caja" name="turn_apellido">
+				<input type="text" class="Form-caja" name="apellido">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Nombre:</label>
-				<input type="text" class="Form-caja" name="turn_nombre">
+				<input type="text" class="Form-caja" name="nombre">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Fecha:</label>
-				<input type="text" class="Form-caja" name="turn_fecha">
+				<input type="date" class="Form-caja" name="fecha">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Hora:</label>
-				<input type="text" class="Form-caja" name="turn_hora">
+				<input type="time" class="Form-caja" name="hora">
 			</div>
 			<section class="Botones">
-				<button type="submit" name="guardar">Guardar</button>
-				<button type="submit" name="nuevo">Nuevo</button>
-				<button type="submit" name="actualizar">Actualizar</button>
-				<button type="submit" name="eliminar">Eliminar</button>
+				<button class="btn-nuevo" type="reset"  value="Limpiar" name="B1">Nuevo</button>
+				<button class="btn-guardar" type="submit"  value="Insertar" name="B1">Guardar</button>	
+				<button class="btn-modificar" type="submit"  value="Modificar" name="B1">Modificar</button>
+				<button class="btn-eliminar" type="submit"  value="Eliminar" name="B1">Eliminar</button>
+				<button class="btn-nuevo" type="submit"  value="Listar" name="B1">Listar</button>
 			</section>
 		</form>
 		<div class="Lista">

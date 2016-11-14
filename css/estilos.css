@@ -157,14 +157,15 @@ li{
   border-radius: 10px;
   box-shadow: 5px 5px 5px #3B3B3B;
 }
-.Form-etiqueta, .Form-caja{ 
+.Form-etiqueta, .Form-caja, .Form-select{ 
   width: 20%;
   display: inline;
   float: left;
-  margin-left: 1%;
-  margin-bottom: 1%;
+  margin-left: 0.5%;
+  margin-bottom: 0.5%;
+  text-align: center;
 }
-.ContentForm input[type="text"]{
+/*.ContentForm input[type="text"],*/.Form-select, .Form-caja{
   width: 20%;
   height: 30px;
   border: 2px solid #727272;
@@ -191,11 +192,8 @@ li{
   display: inline-block;  
   margin: 10px;  
   padding: 2px 20px 2px;
-  border: 2px solid #69CCFA;
   border-radius: 5px 5px 5px;
-  background-color: #69CCFA;
   font-size: 20px;
-  box-shadow: 4px 4px 0px #09558F;    
   position: relative;
   top: 0px;
   left: 0px;
@@ -205,15 +203,32 @@ li{
   display: inline-block;  
   margin: 10px;  
   padding: 2px 20px 2px;
-  border: 2px solid #69CCFA;
   border-radius: 5px 5px 5px;
-  background-color: #69CCFA;
   font-size: 20px;
-  box-shadow: 4px 4px 0px #09558F;    
   position: relative;
   top: 0px;
   left: 0px;
   cursor: pointer;
+}
+.btn-nuevo{
+  border: 2px solid #69CCFA;
+  background-color: #69CCFA;
+  box-shadow: 4px 4px 0px #09558F;
+}
+.btn-guardar{
+  border: 2px solid #8EAC00;
+  background-color: #8EAC00;
+  box-shadow: 4px 4px 0px #3F6600;
+}
+.btn-modificar{
+  border: 2px solid #F2B340;  
+  background-color: #F2B340;
+  box-shadow: 4px 4px 0px #8A5A25;
+}
+.btn-eliminar{
+  border: 2px solid #BF3A2A;
+  background-color: #BF3A2A;
+  box-shadow: 4px 4px 0px #40130E;
 }
 .ContentForm button:active{   
   top: 5px;

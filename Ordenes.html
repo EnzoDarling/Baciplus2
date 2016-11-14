@@ -27,7 +27,7 @@
 <body>
 	<section class="Formulario">
 		<h3 class="FormTitulo">Ordenes</h3>
-		<form action="" class="ContentForm2">
+		<form action="ordenes.php" method="POST" class="ContentForm2">
 			<div class="FormItem">
 				<label class="Form-etiqueta">N° Orden:</label>
 				<input type="text" class="Form-caja" name="num_orden">
@@ -42,13 +42,17 @@
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Solicitud de Cultivo:</label>
-				<input type="text" class="Form-caja" name="sol_cultivo">
+				<select class="Form-select" name="sol_cultivo">
+					<option name="si">SI</option>
+					<option value="no">NO</option>
+				</select>
 			</div>
 			<section class="Botones">
-				<button type="submit" name="guardar">Guardar</button>
-				<button type="submit" name="nuevo">Nuevo</button>
-				<button type="submit" name="modificar">Modificar</button>
-				<button type="submit" name="eliminar">Eliminar</button>
+				<button class="btn-nuevo" type="submit"  value="Limpiar" name="B1">Nuevo</button>
+				<button class="btn-guardar" type="submit"  value="Insertar" name="B1">Guardar</button>	
+				<button class="btn-modificar" type="submit"  value="Modificar" name="B1">Modificar</button>
+				<button class="btn-eliminar" type="submit"  value="Eliminar" name="B1">Eliminar</button>
+				<button class="btn-nuevo" type="submit"  value="Listar" name="B1">Listar</button>
 			</section>
 		</form>
 		<div class="Lista">

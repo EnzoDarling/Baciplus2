@@ -27,19 +27,12 @@
 <body>
 <section class="Formulario">
 		<h3 class="FormTitulo">Muestras</h3>
-		<form action="" class="ContentForm2">
+		<form class="ContentForm2" action="muestras.php" method="POST">
 			<div class="FormItem">
 				<label class="Form-etiqueta">Num. Muestra:</label>
 				<input type="text" class="Form-caja" name="num_muestra">
-			</div>
-			<div class="FormItem">
-				<label class="Form-etiqueta">Lectura:</label>
-				<input type="text" class="Form-caja" name="lectura">
-			</div>
-			<div class="FormItem">
-				<label class="Form-etiqueta">Tipo de Muestra</label>
-				<input type="text" class="Form-caja" name="tipo_muestra">
-			</div>
+			</div>						
+			
 			<div class="FormItem">
 				<label class="Form-etiqueta">Nº Orden:</label>
 				<input type="text" class="Form-caja" name="num_orden">
@@ -47,12 +40,39 @@
 			<div class="FormItem">
 				<label class="Form-etiqueta">N° Cultivo:</label>
 				<input type="text" class="Form-caja" name="num_cultivo">
+			</div>			
+			<div class="FormItem">
+				<label class="Form-etiqueta">Lectura:</label>
+				<select class="Form-select" name="lectura">
+					<option value="primera">Primera</option>
+					<option value="segunda">Segunda</option>
+					<option value="tercera">Tercera</option>
+				</select>				
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">Solicitud de Cultivo:</label>
+				<select class="Form-select" name="sol_cultivo">
+					<option value="si">Si</option>
+					<option value="no">No</option>
+				</select>
+			</div>
+			<div class="FormItem">
+				<label class="Form-etiqueta">Tipo de Muestra</label>
+				<select class="Form-select" name="tipo_muestra">
+					<option value="pulmonar">Pulmonar</option>
+					<option value="extrapulmonar">Extrapulmonar</option>
+					<option value="pulmonar analizada">Pulmonar Analizada</option>
+					<option value="extrapulmonar analizada">Extrapulmonar Analizada</option>
+					<option value="pulmonar procesada">Pulmonar Procesada</option>
+					<option value="extrapulmonar procesada">Extrapulmonar Procesada</option>
+				</select>
 			</div>
 			<section class="Botones">
-				<button type="submit" name="guardar">Guardar</button>
-				<button type="submit" name="nuevo">Nuevo</button>
-				<button type="submit" name="modificar">Modificar</button>
-				<button type="submit" name="eliminar">Eliminar</button>
+				<button class="btn-nuevo" type="submit"  value="Limpiar" name="B1">Nuevo</button>
+				<button class="btn-guardar" type="submit"  value="Insertar" name="B1">Guardar</button>	
+				<button class="btn-modificar" type="submit"  value="Modificar" name="B1">Modificar</button>
+				<button class="btn-eliminar" type="submit"  value="Eliminar" name="B1">Eliminar</button>
+				<button class="btn-nuevo" type="submit"  value="Listar" name="B1">Listar</button>
 			</section>
 		</form>
 		<div class="Lista">

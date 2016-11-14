@@ -27,14 +27,14 @@
 <body>
 	<section class="Formulario">
 		<h3 class="FormTitulo">Informes</h3>
-		<form action="" class="ContentForm">
+		<form class="ContentForm" action="informes.php" method="post">
 			<div class="FormItem">
 				<label class="Form-etiqueta">Num. Informe:</label>
 				<input type="text" class="Form-caja" name="num_informe">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Fecha:</label>
-				<input type="text" class="Form-caja" name="fecha">
+				<input type="date" class="Form-caja" name="fecha">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Num. Muestra:</label>
@@ -50,7 +50,7 @@
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Fecha 1º Lectura:</label>
-				<input type="text" class="Form-caja" name="fecha_primera_lectura">
+				<input type="date" class="Form-caja" name="fecha_primera_lectura">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">1º Lectura:</label>
@@ -58,17 +58,18 @@
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Fecha 2º Lectura:</label>
-				<input type="text" class="Form-caja" name="fecha_segunda_lectura">
+				<input type="date" class="Form-caja" name="fecha_segunda_lectura">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">2º Lectura:</label>
 				<input type="text" class="Form-caja" name="segunda_lectura">
 			</div>
 			<section class="Botones">		
-				<button type="submit" name="guardar">Guardar</button>			
-				<button type="submit" name="guardar">Nuevo</button>			
-				<button type="submit" name="guardar">Modificar</button>			
-				<button type="submit" name="guardar">Eliminar</button>	
+				<button class="btn-nuevo" type="submit"  value="Limpiar" name="B1">Nuevo</button>
+				<button class="btn-guardar" type="submit"  value="Insertar" name="B1">Guardar</button>	
+				<button class="btn-modificar" type="submit"  value="Modificar" name="B1">Modificar</button>
+				<button class="btn-eliminar" type="submit"  value="Eliminar" name="B1">Eliminar</button>
+				<button class="btn-nuevo" type="submit"  value="Listar" name="B1">Listar</button>
 			</section>
 		</form>
 		<div class="Lista">

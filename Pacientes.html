@@ -27,28 +27,29 @@
 <body>
 	<section class="Formulario">
 		<h3 class="FormTitulo">Pacientes</h3>
-		<form action="" class="ContentForm2">
+		<form class="ContentForm2" action="pacientes.php" method="post">
 			<div class="FormItem">
 				<label class="Form-etiqueta">DNI:</label>
-				<input type="text" class="Form-caja" name="num_orden">
+				<input type="text" class="Form-caja" name="dni_paciente">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Dirección:</label>
-				<input type="text" class="Form-caja" name="num_orden">
+				<input type="text" class="Form-caja" name="dire">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">Telefono:</label>
-				<input type="text" class="Form-caja" name="num_orden">
+				<input type="text" class="Form-caja" name="telefono">
 			</div>
 			<div class="FormItem">
 				<label class="Form-etiqueta">N° Orden:</label>
 				<input type="text" class="Form-caja" name="num_orden">
 			</div>
 			<section class="Botones">
-				<button type="submit" name="nuevo">Nuevo</button>
-				<button type="submit" name="guardar">Guardar</button>
-				<button type="submit" name="modificar">Modificar</button>
-				<button type="submit" name="eliminar">Eliminar</button>
+				<button class="btn-nuevo" type="submit"  value="Limpiar" name="B1">Nuevo</button>
+				<button class="btn-guardar" type="submit"  value="Insertar" name="B1">Guardar</button>	
+				<button class="btn-modificar" type="submit"  value="Modificar" name="B1">Modificar</button>
+				<button class="btn-eliminar" type="submit"  value="Eliminar" name="B1">Eliminar</button>
+				<button class="btn-nuevo" type="submit"  value="Listar" name="B1">Listar</button>
 			</section>
 		</form>
 		<div class="Lista">
